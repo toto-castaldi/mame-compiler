@@ -5,6 +5,8 @@ RUN apt-get install -y git
 RUN apt-get install -y unzip
 RUN apt-get install -y build-essential
 RUN apt-get install -y libsdl2-dev libsdl2-ttf-dev libfontconfig-dev qt5-default
+RUN apt-get install -y libgl1-mesa-dri
+RUN apt-get install -y mesa-utils
 
 ADD https://github.com/mamedev/mame/archive/mame0177.zip /
 #COPY mame0177.zip /
@@ -14,5 +16,7 @@ RUN cd /mame-mame0177 && make
 
 
 VOLUME /root
+
+
 
 CMD ["bash"]

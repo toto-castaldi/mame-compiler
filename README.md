@@ -1,12 +1,12 @@
-docker-mame
-===========
+mame-compiler
+=============
 
 tested width 0.177
 
 ### Run
 
 	> sudo rm -rf build
-	> docker run -it -v `pwd`/build:/workspace totocastaldi/docker-mame
+	> docker run -it -v `pwd`/build:/workspace totocastaldi/mame-compiler
 
 
 #### Greetings

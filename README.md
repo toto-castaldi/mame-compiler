@@ -1,13 +1,19 @@
 mame-compiler
 =============
 
-tested width 0.177
-
 ### Run
 
 	> sudo rm -rf build
 	> mkdir build
-	> docker run -it -v `pwd`/build:/workspace totocastaldi/mame-compiler
+	> docker run -it -v `pwd`/build:/workspace -e VER=[VER] totocastaldi/mame-compiler
+
+
+### Examples
+
+	> docker run -it -v `pwd`/build:/workspace -e VER=0164 totocastaldi/mame-compiler
+	> docker run -it -v `pwd`/build:/workspace -e VER=0177 totocastaldi/mame-compiler
+
+Available versions here https://github.com/mamedev/mame/tags
 
 
 #### Greetings

@@ -3,7 +3,7 @@ set -e
 
 
 if [ "$1" = 'build' ]; then
-  export MAME=mame$VER.zip
+  export MAME=$VER.zip
   cd /workspace
   wget https://github.com/mamedev/mame/archive/$MAME
   unzip $MAME
